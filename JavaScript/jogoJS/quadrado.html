@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas 3</title>
+    <style>
+      #canvas {
+        border: 3px  solid #000;
+        float: left;
+    }
+      #container {
+      float: left; 
+      font-size: large;
+      display: flex;
+    }
+      #resultado {
+      position: absolute;
+      font-size: large;
+      left: 250px; 
+      top: 10px;
+    }
+      .vida-bar {
+      background-color: #f0f0f0; 
+      color: #333; 
+      padding: 5px; 
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      margin: 5px; 
+      text-align: center; 
+      width: 150px; 
+    }
+      #vida-quadrado1 {
+      background-color: rgba(255, 102, 0, 0.466); 
+      color: #fff; 
+    }
+
+      #vida-quadrado2 {
+      background-color: rgb(154, 152, 158); 
+      color: #fff; 
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="vida-quadrado1" class="vida-bar"></div>
+      <div id="vida-quadrado2" class="vida-bar"></div>
+      <div id="resultado" class="vida-bar"></div>
+    </div>
+    <canvas id="canvas" width="1000" height="500"></canvas>
+    <script type="text/javascript" src="./js/quadrado.js"></script>
+    <script type="text/javascript" src="./js/funcoes.js"></script>
+  </body>
+
+</html>
